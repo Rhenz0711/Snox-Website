@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snox+ Taytay Rizal Branch — Good Finds. Good Times</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
+</head>
+
+</head>
+
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <span class="announcement-badge">Open Daily</span>
+      <span class="announcement-text">9:00 AM – 10:00 PM</span>
+      <span class="announcement-separator">•</span>
+      <span class="announcement-branch">Taytay Branch</span>
+      <span class="announcement-location"><a href="#location">Visit Store</a></span>
+    </div>
+  </div>
+
+  <!-- 2. Navigation Bar -->
+  <header class="navbar">
+    <a href="#" class="brand-link" aria-label="Snox+ Taytay Home">
+      <img src="img/hero-logo/logo.png" alt="Snox+ Logo" class="logo">
+    </a>
+
+    <nav class="nav-menu" aria-label="Primary Navigation">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#reels">Reels</a></li>
+        <li><a href="#location">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" placeholder="Search snacks, ramen, drinks..." aria-label="Search store stock">
+      </div>
+      <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer" class="btn-inquire-fb">
+        <img class="fb-logo" src="img/hero-logo/facebook.png" alt="">
+        <span>Inquire on FB</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 3. Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        
+        <span class="hero-eyebrow">Imported & Local Snack Shop</span>
+          <h1 class="hero-headline">
+            Good Finds. <br>
+            <span class="span-color">Good Times.</span>
+          </h1>
+          <p class="hero-subtitle">
+          Your friendly Taytay snack shop for imported & local favorites, and everyday treats right along Manila East Road.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#collections" class="btn-shop-deals">
+            <span>Explore Collections</span>
+            <span class="btn-arrow" aria-hidden="true">↓</span>
+          </a>
+          <a href="https://m.me/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer" class="btn-messenger">
+            <svg class="messenger-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.909 1.455 5.513 3.734 7.185V22l3.414-1.874c.905.251 1.864.387 2.852.387 5.523 0 10-4.145 10-9.255C22 6.145 17.523 2 12 2zm1.037 12.443l-2.586-2.758-5.048 2.758 5.553-5.895 2.656 2.758 4.978-2.758-5.553 5.895z"/>
+            </svg>
+            <span>Inquire on Messenger</span>
+          </a>
+        </div>
+
+        <div class="hero-perks">
+          <ul>
+            <li>Wholesale & Retail Pricing</li>
+            <li>Authentic imported & local products</li>
+            <li>Chocolate & Gift Shop</li>
+            <li>Accepts Online Payments</li>
+            <li>Open Daily for walk-ins</li>
+            <li>Ample on-site customer parking</li>
+          </ul>
+        </div>
+        </div>
+    </div>
+    <div class="hero-visual">
+      <img src="img/hero-logo/hero-v2.png" alt="Snox+ Taytay shop aisles filled with snacks">
+    </div>
+  </section>
+
+  <!-- 4. Category Grid (11 Categories) -->
+  <section id="collections" class="collections-section">
+    <div class="section-header">
+      <span class="section-kicker">Curated Inventory</span>
+      <h2 class="section-title">Explore Our Collections</h2>
+      <p class="section-subtitle">Stocked with authentic imported and local sweets, ramen bowls, crunchy treats, and pantry direct from our store.</p>
+    </div>
+
+    <!-- Pure CSS Toggle Checkbox -->
+    <input type="checkbox" id="collectionsToggle" class="collections-toggle-checkbox" hidden>
+
+    <div class="category-grid" id="categoryGrid">
+      <!-- 1. Beverages -->
+      <article class="category-card card-beverages">
+        <div class="card-img-wrapper">
+          <img src="img/beverages/rich_and_creamy_chocolate_drink.jpg" alt="Bottled beverages, juices and chocolate drinks">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">01</span>
+          <h3>Beverages</h3>
+          <p>Sodas, juices, coffee blends, and cold refreshment pouches</p>
+        </div>
+      </article>
+
+      <!-- 2. Biscuits & Cookies -->
+      <article class="category-card card-biscuits">
+        <div class="card-img-wrapper">
+          <img src="img/biscuits_and_cookies/oreo_cake_soft_snack.jpg" alt="Soft baked cookies and chocolate snack cakes">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">02</span>
+          <h3>Biscuits & Cookies</h3>
+          <p>Wafers, crunchy cookie jars, dipped sticks, and sandwich cakes</p>
+        </div>
+      </article>
+
+      <!-- 3. Candies & Sweets -->
+      <article class="category-card card-candies">
+        <div class="card-img-wrapper">
+          <img src="img/candies_and_sweets/chupa_chups_big_lollipop.jpg" alt="Assorted gummies, lollipops and fruit drops">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">03</span>
+          <h3>Candies & Sweets</h3>
+          <p>Chewy gummies, peelable fruit drops, jellies, and party pops</p>
+        </div>
+      </article>
+
+      <!-- 4. Canned Goods -->
+      <article class="category-card card-canned">
+        <div class="card-img-wrapper">
+          <img src="img/canned_goods/hansung_pork_luncheon_meat.jpg" alt="Imported luncheon meats and pantry essentials">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">04</span>
+          <h3>Canned Goods</h3>
+          <p>Korean luncheon meats, sausages, and quick pantry staples</p>
+        </div>
+      </article>
+
+      <!-- 5. Chocolates -->
+      <article class="category-card card-chocolates">
+        <div class="card-img-wrapper">
+          <img src="img/chocolates/bourbon_alfort_mini_chocolate_biscuits.jpg" alt="Imported Japanese chocolates and artisanal snack bars">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">05</span>
+          <h3>Chocolates</h3>
+          <p>Dubai-style pistachio bars, Japanese mini biscuits, and pralines</p>
+        </div>
+      </article>
+
+      <!-- 6. Dried Fruits & Nuts -->
+      <article class="category-card card-dried-fruits">
+        <div class="card-img-wrapper">
+          <img src="img/dried_fruits_and_nuts/adora_colorful_plum_dried_fruit.jpg" alt="Premium dried fruits and packaged plum snacks">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">06</span>
+          <h3>Dried Fruits & Nuts</h3>
+          <p>Dried plums, dates, roasted trail nuts, and guilt-free snacking</p>
+        </div>
+      </article>
+
+      <!-- 7. Merchandise & Accessories -->
+      <article class="category-card card-merch">
+        <div class="card-img-wrapper">
+          <img src="img/merchandise_and_accessories/snox_ceramic_mug_collection.jpg" alt="Snox branded ceramic mugs and gift items">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">07</span>
+          <h3>Merchandise</h3>
+          <p>Snox+ collector mugs, gift packages, and snack charms</p>
+        </div>
+      </article>
+
+      <!-- 8. Noodles & Instant Meals -->
+      <article class="category-card card-noodles">
+        <div class="card-img-wrapper">
+          <img src="img/noodles_and_instant_meals/samyang_buldak_carbonara_noodles.jpg" alt="Spicy Korean ramen packs and instant noodles">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">08</span>
+          <h3>Noodles & Instant Meals</h3>
+          <p>Korean Buldak ramen, Jin ramen bowls, and instant dinner meals</p>
+        </div>
+      </article>
+
+      <!-- 9. Seaweed Snacks -->
+      <article class="category-card card-seaweed">
+        <div class="card-img-wrapper">
+          <img src="img/seaweed_snacks/tokinori_crispy_roasted_seaweed.jpg" alt="Crispy seasoned roasted seaweed sheets">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">09</span>
+          <h3>Seaweed Snacks</h3>
+          <p>Tokinori crispy laver, seasoned flakes, and umami treats</p>
+        </div>
+      </article>
+
+      <!-- 10. Spreads & Breakfast -->
+      <article class="category-card card-spreads">
+        <div class="card-img-wrapper">
+          <img src="img/spreads_and_breakfast/nutella_hazelnut_spread.jpg" alt="Nutella hazelnut spread and breakfast cereals">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">10</span>
+          <h3>Spreads & Breakfast</h3>
+          <p>Nutella jars, Lotus Biscoff, mini crunch jars, and morning oats</p>
+        </div>
+      </article>
+
+      <!-- 11. Store Promotions & Events -->
+      <article class="category-card card-promos">
+        <div class="card-img-wrapper">
+          <img src="img/store_promotions_and_events/3for99.jpg" alt="Mix and Match 99 store promotional deal">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">11</span>
+          <h3>Store Promotions</h3>
+          <p>Mix & Match ₱99 specials, seasonal drops, and store bundles</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pure CSS Collapsible Toggle Button -->
+    <div class="collections-toggle-wrapper">
+      <label for="collectionsToggle" class="btn-toggle-collections" role="button" tabindex="0">
+        <span class="label-collapsed">View All Collections <span class="toggle-btn-icon" aria-hidden="true">↓</span></span>
+        <span class="label-expanded">Show Less Collections <span class="toggle-btn-icon" aria-hidden="true">↑</span></span>
+      </label>
+    </div>
+  </section>
+
+  <!-- 5. Watch Our Reels & Social Community -->
+  <section id="reels" class="reels-section">
+    <div class="reels-header-wrapper">
+      <div class="section-header">
+        <span class="section-kicker">Snox+ Community</span>
+        <h2 class="section-title">Watch Our Reels & Community</h2>
+        <p class="section-subtitle">Catch daily restock updates, taste reviews, and behind-the-scenes moments from our Taytay team.</p>
+      </div>
+    </div>
+
+    <div class="reels-carousel-container">
+      <div class="reels-carousel-track" id="reelsTrack">
+        
+        <!-- Set 1 (Original) -->
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.tiktok.com/@fuda.ph/video/7642791096031956232?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+              <img src="img/store_promotions_and_events/store_showcase.png" alt="Vlogger Showcasing the products">
+            </a>
+            <span class="reel-play-btn" aria-hidden="true">▶</span>
+            <span class="reel-tag">Store Showcase</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1BoFgcXSgr/" target="_blank"><img src="img/store_promotions_and_events/store_outside.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Grand Opening</span>
+          </div>
+        </article>
+
+         <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1aymHo2ZmH/" target="_blank">
+              <img src="img/store_promotions_and_events/special_visit.jpg" alt="Mayor Allan De Leon visiting Snox Taytay">
+            </a>
+            <span class="reel-tag">Special Visit</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1Ce7XRmg76/" target="_blank"><img src="img/store_promotions_and_events/promotions.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Store promotions</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1HeHWcrFF2/" target="_blank"><img src="img/store_promotions_and_events/store_hours.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Open Daily</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/19u4c3cAH8/" target="_blank"><img src="img/store_promotions_and_events/daily_cravings.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Daily Cravings</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1EAnfbCUTw/" target="_blank"><img src="img/store_promotions_and_events/store_promos.png" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Limited Time Promos</span>
+          </div>
+        </article>
+
+        <!-- Set 2 (Infinite Loop) -->
+        <article class="reel-card" aria-hidden="true">
+          <div class="reel-thumbnail">
+            <a href="https://www.tiktok.com/@fuda.ph/video/7642791096031956232?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+              <img src="img/store_promotions_and_events/store_showcase.png" alt="Vlogger Showcasing the products">
+            </a>
+            <span class="reel-tag">Store Showcase</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1BoFgcXSgr/" target="_blank"><img src="img/store_promotions_and_events/store_outside.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Grand Opening</span>
+          </div>
+        </article>
+
+         <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1aymHo2ZmH/" target="_blank">
+              <img src="img/store_promotions_and_events/special_visit.jpg" alt="Mayor Allan De Leon visiting Snox Taytay">
+            </a>
+            <span class="reel-tag">Special Visit</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1Ce7XRmg76/" target="_blank"><img src="img/store_promotions_and_events/promotions.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Store promotions</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1HeHWcrFF2/" target="_blank"><img src="img/store_promotions_and_events/store_hours.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Open Daily</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/19u4c3cAH8/" target="_blank"><img src="img/store_promotions_and_events/daily_cravings.jpg" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Daily Cravings</span>
+          </div>
+        </article>
+
+        <article class="reel-card">
+          <div class="reel-thumbnail">
+            <a href="https://www.facebook.com/share/p/1EAnfbCUTw/" target="_blank"><img src="img/store_promotions_and_events/store_promos.png" alt="Snox Store outside view"></a>
+            <span class="reel-tag">Limited Time Promos</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="social-banner">
+      <div class="social-banner-text">
+        <h3>Stay updated on restocks & flash sales</h3>
+        <p>Follow our official feeds to catch fresh product arrivals before they sell out.</p>
+      </div>
+      <div class="social-actions">
+        <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer" class="btn-social-fb">
+          <span><img class="fb-logo" src="img/hero-logo/facebook.png" alt=""></span>
+          <span>Follow on Facebook</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Visit Us Near Kalayaan Park Section -->
+  <section id="location" class="location-section">
+    <div class="location-container">
+      <div class="map-card">
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d720.8630512603346!2d121.1306178142117!3d14.567603706885476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7c46a2cc643%3A0xc4c6e02503b8ce59!2sSnox%2B%20Taytay%20Rizal!5e0!3m2!1sen!2sph!4v1790411026279!5m2!1sen!2sph"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin" title="Snox+ Taytay Branch Location Map"></iframe>
+        </div>
+      </div>
+
+      <div class="location-details">
+        <span class="location-tag">Find Our Branch</span>
+        <h2 class="location-heading">Visit Us in Taytay</h2>
+        
+        <div class="location-meta">
+          <div class="meta-row">
+            <span class="meta-icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Address:</strong>
+              <p>Manila East Road, Taytay, Rizal</p>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-icon" aria-hidden="true">🚩</span>
+            <div>
+              <strong>Landmark:</strong>
+              <p>Located Near Kalayaan Park along Manila East Road</p>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-icon" aria-hidden="true">⏰</span>
+            <div>
+              <strong>Hours:</strong>
+              <p>Monday – Saturday: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-icon" aria-hidden="true">🚗</span>
+            <div>
+              <strong>Convenience:</strong>
+              <p>Spacious front parking area for cars, motorcycles, and cargo loading</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-ctas">
+          <a href="https://maps.google.com/?q=Snox%2B+Taytay+Rizal" target="_blank" rel="noopener noreferrer" class="btn-gmaps">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span>Open in Google Maps</span>
+          </a>
+          <a href="https://waze.com/ul?q=Snox%2B+Taytay+Rizal" target="_blank" rel="noopener noreferrer" class="btn-waze">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-10 10c0 4.14 2.54 7.69 6.16 9.17.27.11.53-.1.53-.39v-1.89c-3.13.41-3.69-1.63-3.69-1.63-.44-1.12-1.07-1.42-1.07-1.42-.87-.6.07-.59.07-.59.96.07 1.47.99 1.47.99.85 1.47 2.23 1.05 2.78.8.09-.62.33-1.05.6-1.29-2.26-.26-4.64-1.13-4.64-5.04 0-1.11.4-2.02 1.05-2.73-.1-.26-.45-1.3.1-2.7 0 0 .85-.27 2.78 1.04a9.66 9.66 0 0 1 5.06 0c1.93-1.31 2.78-1.04 2.78-1.04.55 1.4.2 2.44.1 2.7.66.71 1.05 1.62 1.05 2.73 0 3.92-2.38 4.78-4.65 5.04.34.29.65.88.65 1.77v2.63c0 .29.26.5.53.39A10.02 10.02 0 0 0 22 12 10 10 0 0 0 12 2z"/>
+            </svg>
+            <span>Navigate with Waze</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col footer-col-brand">
+        <img src="img/hero-logo/logo.png" alt="Snox+" class="footer-logo">
+        <p class="footer-bio">
+          Your neighborhood snack store in Taytay, Rizal. Good finds, everyday value, and bulk and retail orders for families and resellers.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Store Hours</h4>
+        <div class="schedule-card">
+          <div class="schedule-item">
+            <span class="schedule-days">Monday – Saturday</span>
+            <span class="schedule-time">9:00 AM – 8:00 PM</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-days">Sunday</span>
+            <span class="schedule-time">10:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <span>Near Kalayaan Park, Manila East Road, Taytay, Rizal</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">✉️</span>
+            <span>hello@snox.plus</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">💬</span>
+            <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer">
+              facebook.com/Snoxtaytayrizalbranch
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright-text">© 2026 Snox+ Taytay Rizal Branch. All rights reserved.</p>
+      <div class="payment-badges" aria-label="Accepted Payment Methods">
+        <span class="payment-badge">GCash</span>
+        <span class="payment-badge">Maya</span>
+        <span class="payment-badge">Cash on Delivery</span>
+        <span class="payment-badge">Bank Transfer</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. Floating Messenger Widget -->
+  <a href="https://m.me/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer" class="floating-messenger" aria-label="Inquire directly on Facebook Messenger">
+    <img class="messenger-logo" src="img/hero-logo/messenger.png" alt="">
+    <span class="floating-tooltip">Need stock check? Chat with us</span>
+  </a>
+
+</body>
+</html>
