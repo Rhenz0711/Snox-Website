@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snox+ Taytay Rizal Branch — Good Finds. Good Times</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
+</head>
+
+<body>
+  <!-- 1. Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <span class="announcement-badge">Open Daily</span>
+      <span class="announcement-text">9:00 AM – 10:00 PM</span>
+      <span class="announcement-separator">•</span>
+      <span class="announcement-branch">Taytay Branch</span>
+      <span class="announcement-location"><a href="#location">Visit Store</a></span>
+    </div>
+  </div>
+
+  <!-- 2. Navigation Bar -->
+  <header class="navbar">
+    <a href="index.html" class="brand-link" aria-label="Snox+ Taytay Home">
+      <img src="img/hero-logo/logo.png" alt="Snox+ Logo" class="logo">
+    </a>
+
+    <nav class="nav-menu" aria-label="Primary Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">← Return to Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" placeholder="Search snacks, ramen, drinks..." aria-label="Search store stock">
+      </div>
+      <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer"
+        class="btn-inquire-fb">
+        <img class="fb-logo" src="img/hero-logo/facebook.png" alt="">
+        <span>Inquire on FB</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 3. Item Grid -->
+  <section id="collections" class="collections-section">
+    <div class="section-header">
+      <span class="section-kicker">Curated Inventory</span>
+      <h2 class="section-title">Seaweed Snacks Collections</h2>
+      <p class="section-subtitle">Explore some sea snacks related.</p>
+    </div>
+
+    <!-- Pure CSS Toggle Checkbox -->
+    <input type="checkbox" id="collectionsToggle" class="collections-toggle-checkbox" hidden>
+
+    <div class="category-grid" id="categoryGrid">
+      <!-- 1.  -->
+      <article class="category-card card-seaweed">
+        <div class="card-img-wrapper">
+          <img src="img/seaweed_snacks/korean_seasoned_seaweed_laver.jpg"
+            alt="korean_seasoned_seaweed_laver">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">01</span>
+          <h3>Korean Seasoned Seaweed Laver</h3>
+          <p>-</p>
+        </div>
+      </article>
+
+      <!-- 2.  -->
+      <article class="category-card card-seaweed">
+        <div class="card-img-wrapper">
+          <img src="img/seaweed_snacks/pororo_seasoned_laver_seaweed_flakes.jpg" alt="Pororo Seaweed pororo_seasoned_laver_seaweed_flakes">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">02</span>
+          <h3>Pororo Seaweed Flakes</h3>
+          <p>-</p>
+        </div>
+      </article>
+
+      <!-- 3.  -->
+      <article class="category-card card-seaweed">
+        <div class="card-img-wrapper">
+          <img src="img/seaweed_snacks/tokinori_crispy_roasted_seaweed.jpg" alt="tokinori_crispy_roasted_seaweed">
+        </div>
+        <div class="card-body">
+          <span class="card-category-index">03</span>
+          <h3>Tokinori Roasted Seaweed</h3>
+          <p>-</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pure CSS Collapsible Toggle Button -->
+    <div class="collections-toggle-wrapper">
+      <label for="collectionsToggle" class="btn-toggle-collections" role="button" tabindex="0">
+        <span class="label-collapsed">View All Collections <span class="toggle-btn-icon"
+            aria-hidden="true">↓</span></span>
+        <span class="label-expanded">Show Less Collections <span class="toggle-btn-icon"
+            aria-hidden="true">↑</span></span>
+      </label>
+    </div>
+  </section>
+</body>
+</html>
