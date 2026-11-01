@@ -1,134 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snox+ Taytay Rizal Branch — Good Finds. Good Times</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
-    rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
+  <title>Noodles and Instant Meals| Our Collections</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/subpage.css">
 </head>
-
 <body>
-  <!-- 1. Top Announcement Bar -->
-  <div class="announcement-bar">
-    <div class="announcement-inner">
-      <span class="announcement-badge">Open Daily</span>
-      <span class="announcement-text">9:00 AM – 10:00 PM</span>
-      <span class="announcement-separator">•</span>
-      <span class="announcement-branch">Taytay Branch</span>
-      <span class="announcement-location"><a href="#location">Visit Store</a></span>
-    </div>
-  </div>
+  <!-- Import the header boilerplate -->
+  <iframe src="header-boilerplate.html" class="header-iframe" scrolling="no" title="Site Header"></iframe>
 
-  <!-- 2. Navigation Bar -->
-  <header class="navbar">
-    <a href="index.html" class="brand-link" aria-label="Snox+ Taytay Home">
-      <img src="img/hero-logo/logo.png" alt="Snox+ Logo" class="logo">
-    </a>
-
-    <nav class="nav-menu" aria-label="Primary Navigation">
-      <ul class="nav-links">
-        <li><a href="index.html">← Return to Home</a></li>
-      </ul>
-    </nav>
-
-    <div class="nav-actions">
-      <div class="search-box">
-        <span class="search-icon" aria-hidden="true">🔍</span>
-        <input type="text" placeholder="Search snacks, ramen, drinks..." aria-label="Search store stock">
-      </div>
-      <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer"
-        class="btn-inquire-fb">
-        <img class="fb-logo" src="img/hero-logo/facebook.png" alt="">
-        <span>Inquire on FB</span>
+  <!-- Modern Breadcrumb Bar -->
+  <nav class="subpage-breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="subpage-breadcrumb-inner">
+      <ol class="breadcrumbs">
+        <li>
+          <a href="../mainpage.html">Home</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li>
+          <a href="../mainpage.html#collections">Collections</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li class="breadcrumb-current" aria-current="page">Noodles and Instant Meals</li>
+      </ol>
+      <a href="../mainpage.html#collections" class="breadcrumb-back-btn">
+        <span aria-hidden="true">&larr;</span> All Collections
       </a>
     </div>
-  </header>
+  </nav>
 
-  <!-- 3. Item Grid -->
-  <section id="collections" class="collections-section">
+  <section class="collections-section">
     <div class="section-header">
       <span class="section-kicker">Curated Inventory</span>
-      <h2 class="section-title">Noodles and Instant Meals Collections</h2>
-      <p class="section-subtitle">Explore some noodles, instant meals and some spicy ramen.</p>
+      <h2 class="section-title">Noodles and Instant Meals Collection</h2>
+      <p class="section-subtitle">
+        Discover our collection of noodles, instant meals, and some spicy ramen.
+      </p>
     </div>
 
-    <!-- Pure CSS Toggle Checkbox -->
-    <input type="checkbox" id="collectionsToggle" class="collections-toggle-checkbox" hidden>
-
     <div class="category-grid" id="categoryGrid">
-      <!-- 1.  -->
-      <article class="category-card card-noodles">
+      <article class="category-card card-beverages">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/nissin_cup_noodles_seafood.jpg" alt="Nissin Cup Seafood">
+          <img src="../img/noodles_and_instant_meals/nissin_cup_noodles_seafood.jpg" alt="Nissin Cup Noodles">
         </div>
         <div class="card-body">
           <span class="card-category-index">01</span>
-          <h3>Nissin Cup Seafood</h3>
+          <h3>Nissin Cup Noodles</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 2.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/ottogi_jin_ramen_spicy_mild.jpg" alt="Jin Ramen Spicy Mild">
+          <img src="../img/noodles_and_instant_meals/ottogi_jin_ramen_spicy_mild.jpg" alt="Ottogi Jin Rame Spicy Mild">
         </div>
         <div class="card-body">
           <span class="card-category-index">02</span>
-          <h3>Jin Ramen Spicy Mild</h3>
+          <h3>Ottogi Jin Ramen Spicy Mild</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 3.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/paldo_wang_ttukkeung_king_cup_ramyeon.jpg"
-            alt="Paldo Wang Cup Ramyeon">
+          <img src="../img/noodles_and_instant_meals/paldo_wang_ttukkeung_king_cup_ramyeon.jpg" alt="Paldo Wang Ttukkeung King Cup Ramyeon">
         </div>
         <div class="card-body">
           <span class="card-category-index">03</span>
-          <h3>Paldo wang Cup Ramyeon</h3>
+          <h3>Paldo Wang Ttukkeung King Cup Ramyeon</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 4.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/samyang_buldak_carbonara_hot_chicken_ramen.jpg"
-            alt="Buldak Carbonara Hot Chicken">
+          <img src="../img/noodles_and_instant_meals/samyang_buldak_carbonara_hot_chicken_ramen.jpg" alt="Samyang Carbonara Hot Chicken Ramen">
         </div>
         <div class="card-body">
           <span class="card-category-index">04</span>
-          <h3>Samyang Buldak Carbonara Hot Chicken Ramen</h3>
+          <h3>Samyang Carbonara Hot Chicken Ramen</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 5.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/samyang_buldak_carbonara_noodles.jpg" alt="Buldak Carbonara">
+          <img src="../img/noodles_and_instant_meals/samyang_buldak_carbonara_noodles.jpg" alt="Samyang Buldak Carbonara Noodles">
         </div>
         <div class="card-body">
           <span class="card-category-index">05</span>
-          <h3>Samyang Buldak Carbonara</h3>
+          <h3>Samyang Buldak Carbonara Noodles</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 6.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/samyang_buldak_hot_chicken_ramen.jpg" alt="Buldak Hot Chicken">
+          <img src="../img/noodles_and_instant_meals/samyang_buldak_hot_chicken_ramen.jpg" alt="Samyang Buldak Hot Chicken Ramen">
         </div>
         <div class="card-body">
           <span class="card-category-index">06</span>
@@ -137,23 +107,20 @@
         </div>
       </article>
 
-      <!-- 7.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/samyang_buldak_original_noodles.jpg" alt="Buldak Original">
+          <img src="../img/noodles_and_instant_meals/samyang_buldak_original_noodles.jpg" alt="Samyang Buldak Original Noodles">
         </div>
         <div class="card-body">
           <span class="card-category-index">07</span>
-          <h3>Samyang Buldak Original</h3>
+          <h3>Samyang Buldak Original Noodles</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 8.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/samyang_buldak_rose_hot_chicken_ramen.jpg"
-            alt="Buldak Rose Hot Chicken">
+          <img src="../img/noodles_and_instant_meals/samyang_buldak_rose_hot_chicken_ramen.jpg" alt="Samyang Buldak Rose Hot Chicken Ramen">
         </div>
         <div class="card-body">
           <span class="card-category-index">08</span>
@@ -162,41 +129,32 @@
         </div>
       </article>
 
-      <!-- 9.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/samyang_buldak_rose_noodles.jpg" alt="Buldak Rose">
+          <img src="../img/noodles_and_instant_meals/samyang_buldak_rose_noodles.jpg" alt="Samyang Buldak Rose Noodles">
         </div>
         <div class="card-body">
           <span class="card-category-index">09</span>
-          <h3>Samyang Buldak Rose</h3>
+          <h3>Samyang Buldak Rose Noodles</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 10.  -->
       <article class="category-card card-noodles">
         <div class="card-img-wrapper">
-          <img src="img/noodles_and_instant_meals/willow_rice_noodle_instant_meal.jpg" alt="Willow Rice">
+          <img src="../img/noodles_and_instant_meals/willow_rice_noodle_instant_meal.jpg" alt="Willow Rice Instant Meal">
         </div>
         <div class="card-body">
           <span class="card-category-index">10</span>
-          <h3>Willow Rice Noodle</h3>
+          <h3>Willow Rice Instant Meal</h3>
           <p>-</p>
         </div>
       </article>
-    </div>
 
-    <!-- Pure CSS Collapsible Toggle Button -->
-    <div class="collections-toggle-wrapper">
-      <label for="collectionsToggle" class="btn-toggle-collections" role="button" tabindex="0">
-        <span class="label-collapsed">View All Collections <span class="toggle-btn-icon"
-            aria-hidden="true">↓</span></span>
-        <span class="label-expanded">Show Less Collections <span class="toggle-btn-icon"
-            aria-hidden="true">↑</span></span>
-      </label>
+
+
+
     </div>
   </section>
 </body>
-
 </html>

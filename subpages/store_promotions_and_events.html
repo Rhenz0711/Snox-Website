@@ -1,72 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snox+ Taytay Rizal Branch — Good Finds. Good Times</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
-    rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
+  <title>Store Promotions and Events| Our Collections</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/subpage.css">
 </head>
-
 <body>
-  <!-- 1. Top Announcement Bar -->
-  <div class="announcement-bar">
-    <div class="announcement-inner">
-      <span class="announcement-badge">Open Daily</span>
-      <span class="announcement-text">9:00 AM – 10:00 PM</span>
-      <span class="announcement-separator">•</span>
-      <span class="announcement-branch">Taytay Branch</span>
-      <span class="announcement-location"><a href="#location">Visit Store</a></span>
-    </div>
-  </div>
+  <!-- Import the header boilerplate -->
+  <iframe src="header-boilerplate.html" class="header-iframe" scrolling="no" title="Site Header"></iframe>
 
-  <!-- 2. Navigation Bar -->
-  <header class="navbar">
-    <a href="index.html" class="brand-link" aria-label="Snox+ Taytay Home">
-      <img src="img/hero-logo/logo.png" alt="Snox+ Logo" class="logo">
-    </a>
-
-    <nav class="nav-menu" aria-label="Primary Navigation">
-      <ul class="nav-links">
-        <li><a href="index.html">← Return to Home</a></li>
-      </ul>
-    </nav>
-
-    <div class="nav-actions">
-      <div class="search-box">
-        <span class="search-icon" aria-hidden="true">🔍</span>
-        <input type="text" placeholder="Search snacks, ramen, drinks..." aria-label="Search store stock">
-      </div>
-      <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer"
-        class="btn-inquire-fb">
-        <img class="fb-logo" src="img/hero-logo/facebook.png" alt="">
-        <span>Inquire on FB</span>
+  <!-- Modern Breadcrumb Bar -->
+  <nav class="subpage-breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="subpage-breadcrumb-inner">
+      <ol class="breadcrumbs">
+        <li>
+          <a href="../mainpage.html">Home</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li>
+          <a href="../mainpage.html#collections">Collections</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li class="breadcrumb-current" aria-current="page">Store Promotion and Events</li>
+      </ol>
+      <a href="../mainpage.html#collections" class="breadcrumb-back-btn">
+        <span aria-hidden="true">&larr;</span> All Collections
       </a>
     </div>
-  </header>
+  </nav>
 
-  <!-- 3. Item Grid -->
-  <section id="collections" class="collections-section">
+  <section class="collections-section">
     <div class="section-header">
       <span class="section-kicker">Curated Inventory</span>
-      <h2 class="section-title">Store Promotions and Events</h2>
-      <p class="section-subtitle">Explore promotions and events.</p>
+      <h2 class="section-title">Store Promotions and Events Collection</h2>
+      <p class="section-subtitle">
+        Discover our store promotions and events.
+      </p>
     </div>
 
-    <!-- Pure CSS Toggle Checkbox -->
-    <input type="checkbox" id="collectionsToggle" class="collections-toggle-checkbox" hidden>
-
     <div class="category-grid" id="categoryGrid">
-      <!-- 1.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/3for99.jpg" alt="3for99">
+          <img src="../img/store_promotions_and_events/3for99.jpg" alt="3 for 99">
         </div>
         <div class="card-body">
           <span class="card-category-index">01</span>
@@ -75,10 +52,9 @@
         </div>
       </article>
 
-      <!-- 2.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/daily_cravings.jpg" alt="daily_cravings">
+          <img src="../img/store_promotions_and_events/daily_cravings.jpg" alt="Daily Cravings">
         </div>
         <div class="card-body">
           <span class="card-category-index">02</span>
@@ -87,11 +63,9 @@
         </div>
       </article>
 
-      <!-- 3.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/promotions.jpg"
-            alt="promotions">
+          <img src="../img/store_promotions_and_events/promotions.jpg" alt="Promotions">
         </div>
         <div class="card-body">
           <span class="card-category-index">03</span>
@@ -100,23 +74,20 @@
         </div>
       </article>
 
-      <!-- 4.  -->
-      <article class="category-card card-promos">  
+      <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/snox_store_renovation_ai_makeover.jpg"
-            alt="snox_store_renovation_ai_makeover">
+          <img src="../img/store_promotions_and_events/snox_store_renovation_ai_makeover.jpg" alt="Snox Store Ai Renovation Makeover">
         </div>
         <div class="card-body">
           <span class="card-category-index">04</span>
-          <h3>Snox Store Renovation AI Makeover</h3>
+          <h3>Snox Store Ai Renovation Makeover</h3>
           <p>-</p>
         </div>
       </article>
 
-      <!-- 5.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/special_visit.jpg" alt="special_visit">
+          <img src="../img/store_promotions_and_events/special_visit.jpg" alt="Special Visit">
         </div>
         <div class="card-body">
           <span class="card-category-index">05</span>
@@ -125,10 +96,9 @@
         </div>
       </article>
 
-      <!-- 6.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/store_hours.jpg" alt="store_hours">
+          <img src="../img/store_promotions_and_events/store_hours.jpg" alt="Store Hours">
         </div>
         <div class="card-body">
           <span class="card-category-index">06</span>
@@ -137,10 +107,9 @@
         </div>
       </article>
 
-      <!-- 7.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/store_outside.jpg" alt="store_outside">
+          <img src="../img/store_promotions_and_events/store_outside.jpg" alt="Store Outside">
         </div>
         <div class="card-body">
           <span class="card-category-index">07</span>
@@ -149,11 +118,9 @@
         </div>
       </article>
 
-      <!-- 8.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/store_promos.png"
-            alt="Nutella Hazelnut store_promos">
+          <img src="../img/store_promotions_and_events/store_promos.png" alt="Store Promos">
         </div>
         <div class="card-body">
           <span class="card-category-index">08</span>
@@ -162,10 +129,9 @@
         </div>
       </article>
 
-      <!-- 9.  -->
       <article class="category-card card-promos">
         <div class="card-img-wrapper">
-          <img src="img/store_promotions_and_events/store_showcase.png" alt="store_showcase">
+          <img src="../img/store_promotions_and_events/store_showcase.png" alt="Store Showcase">
         </div>
         <div class="card-body">
           <span class="card-category-index">09</span>
@@ -174,17 +140,6 @@
         </div>
       </article>
     </div>
-
-    <!-- Pure CSS Collapsible Toggle Button -->
-    <div class="collections-toggle-wrapper">
-      <label for="collectionsToggle" class="btn-toggle-collections" role="button" tabindex="0">
-        <span class="label-collapsed">View All Collections <span class="toggle-btn-icon"
-            aria-hidden="true">↓</span></span>
-        <span class="label-expanded">Show Less Collections <span class="toggle-btn-icon"
-            aria-hidden="true">↑</span></span>
-      </label>
-    </div>
   </section>
 </body>
-
 </html>
