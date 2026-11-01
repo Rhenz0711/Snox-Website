@@ -5,50 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snox+ Taytay Rizal Branch — Good Finds. Good Times</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cloudflare.com"> -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/subpage.css">
 </head>
 
 <body>
-  <!-- 1. Top Announcement Bar -->
-  <div class="announcement-bar">
-    <div class="announcement-inner">
-      <span class="announcement-badge">Open Daily</span>
-      <span class="announcement-text">9:00 AM – 10:00 PM</span>
-      <span class="announcement-separator">•</span>
-      <span class="announcement-branch">Taytay Branch</span>
-      <span class="announcement-location"><a href="#location">Visit Store</a></span>
-    </div>
-  </div>
-  
-  <!-- 2. Navigation Bar -->
-  <header class="navbar">
-    <a href="index.html" class="brand-link" aria-label="Snox+ Taytay Home">
-      <img src="img/hero-logo/logo.png" alt="Snox+ Logo" class="logo">
-    </a>
+  <!-- Import the header boilerplate -->
+  <iframe src="header-boilerplate.html" style="width: 100%; height: 100px; border: none; display: block; position: sticky; top: 0; z-index: 100;" scrolling="no" title="Site Header"></iframe>
 
-    <nav class="nav-menu" aria-label="Primary Navigation">
-      <ul class="nav-links">
-        <li><a href="index.html">← Return to Home</a></li>
-      </ul>
-    </nav>
-
-    <div class="nav-actions">
-      <div class="search-box">
-        <span class="search-icon" aria-hidden="true">🔍</span>
-        <input type="text" placeholder="Search snacks, ramen, drinks..." aria-label="Search store stock">
-      </div>
-      <a href="https://www.facebook.com/Snoxtaytayrizalbranch" target="_blank" rel="noopener noreferrer" class="btn-inquire-fb">
-        <img class="fb-logo" src="img/hero-logo/facebook.png" alt="">
-        <span>Inquire on FB</span>
+  <!-- Modern Breadcrumb Bar -->
+  <nav class="subpage-breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="subpage-breadcrumb-inner">
+      <ol class="breadcrumbs">
+        <li>
+          <a href="../mainpage.html">Home</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li>
+          <a href="../mainpage.html#collections">Collections</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li class="breadcrumb-current" aria-current="page">Candies & Sweets</li>
+      </ol>
+      <a href="../mainpage.html#collections" class="breadcrumb-back-btn">
+        <span aria-hidden="true">&larr;</span> All Collections
       </a>
     </div>
-  </header>
+  </nav>
 
-  <!-- 3. Item Grid -->
   <section id="collections" class="collections-section">
     <div class="section-header">
       <span class="section-kicker">Curated Inventory</span>
@@ -56,14 +40,10 @@
       <p class="section-subtitle">Discover our collection of chewy gummies, peelable fruit drops, jellies, and party pops</p>
     </div>
 
-    <!-- Pure CSS Toggle Checkbox -->
-    <input type="checkbox" id="collectionsToggle" class="collections-toggle-checkbox" hidden>
-
     <div class="category-grid" id="categoryGrid">
-      <!-- 1.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/assorted_fruit_gummies_sweet_treat.jpg" alt="assorted_fruit_gummies_sweet_treat">
+          <img src="../img/candies_and_sweets/assorted_fruit_gummies_sweet_treat.jpg" alt="assorted_fruit_gummies_sweet_treat">
         </div>
         <div class="card-body">
           <span class="card-category-index">01</span>
@@ -72,10 +52,9 @@
         </div>
       </article>
 
-      <!-- 2.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/cavendish_and_harvey_fruit_drops.jpg" alt="cavendish_and_harvey_fruit_drops">
+          <img src="../img/candies_and_sweets/cavendish_and_harvey_fruit_drops.jpg" alt="cavendish_and_harvey_fruit_drops">
         </div>
         <div class="card-body">
           <span class="card-category-index">02</span>
@@ -84,10 +63,9 @@
         </div>
       </article>
 
-      <!-- 3.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/chupa_chups_big_lollipop.jpg" alt="chupa_chups_big_lollipop">
+          <img src="../img/candies_and_sweets/chupa_chups_big_lollipop.jpg" alt="chupa_chups_big_lollipop">
         </div>
         <div class="card-body">
           <span class="card-category-index">03</span>
@@ -96,10 +74,9 @@
         </div>
       </article>
 
-      <!-- 4.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/foxs_crystal_clear_candy.jpg" alt="foxs_crystal_clear_candy">
+          <img src="../img/candies_and_sweets/foxs_crystal_clear_candy.jpg" alt="foxs_crystal_clear_candy">
         </div>
         <div class="card-body">
           <span class="card-category-index">04</span>
@@ -108,10 +85,9 @@
         </div>
       </article>
 
-      <!-- 5.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/fruity_chewy_candy_mixed_flavor.jpg" alt="fruity_chewy_candy_mixed_flavor">
+          <img src="../img/candies_and_sweets/fruity_chewy_candy_mixed_flavor.jpg" alt="fruity_chewy_candy_mixed_flavor">
         </div>
         <div class="card-body">
           <span class="card-category-index">05</span>
@@ -120,10 +96,9 @@
         </div>
       </article>
 
-      <!-- 6.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/imported_confectionery_sweet_snack.jpg" alt="imported_confectionery_sweet_snack">
+          <img src="../img/candies_and_sweets/imported_confectionery_sweet_snack.jpg" alt="imported_confectionery_sweet_snack">
         </div>
         <div class="card-body">
           <span class="card-category-index">06</span>
@@ -132,10 +107,9 @@
         </div>
       </article>
 
-      <!-- 7.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/japanese_confectionery_specialty.jpg" alt="japanese_confectionery_specialty">
+          <img src="../img/candies_and_sweets/japanese_confectionery_specialty.jpg" alt="japanese_confectionery_specialty">
         </div>
         <div class="card-body">
           <span class="card-category-index">07</span>
@@ -144,10 +118,9 @@
         </div>
       </article>
 
-      <!-- 8.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/marshmallow_filled_assorted_flavors.jpg" alt="marshmallow_filled_assorted_flavors">
+          <img src="../img/candies_and_sweets/marshmallow_filled_assorted_flavors.jpg" alt="marshmallow_filled_assorted_flavors">
         </div>
         <div class="card-body">
           <span class="card-category-index">08</span>
@@ -156,10 +129,9 @@
         </div>
       </article>
 
-      <!-- 9.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/nougat_crisp_crunchy_treat.jpg" alt="nougat_crisp_crunchy_treat">
+          <img src="../img/candies_and_sweets/nougat_crisp_crunchy_treat.jpg" alt="nougat_crisp_crunchy_treat">
         </div>
         <div class="card-body">
           <span class="card-category-index">09</span>
@@ -168,10 +140,9 @@
         </div>
       </article>
 
-      <!-- 10.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/orihiro_konjac_fruit_jelly.jpg" alt="orihiro_konjac_fruit_jelly">
+          <img src="../img/candies_and_sweets/orihiro_konjac_fruit_jelly.jpg" alt="orihiro_konjac_fruit_jelly">
         </div>
         <div class="card-body">
           <span class="card-category-index">10</span>
@@ -180,10 +151,9 @@
         </div>
       </article>
 
-      <!-- 11.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/peelable_soft_fruit_gummies.jpg" alt="peelable_soft_fruit_gummies">
+          <img src="../img/candies_and_sweets/peelable_soft_fruit_gummies.jpg" alt="peelable_soft_fruit_gummies">
         </div>
         <div class="card-body">
           <span class="card-category-index">11</span>
@@ -192,10 +162,9 @@
         </div>
       </article>
 
-      <!-- 12.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/space_pop_big_lollipop.jpg" alt="space_pop_big_lollipop">
+          <img src="../img/candies_and_sweets/space_pop_big_lollipop.jpg" alt="space_pop_big_lollipop">
         </div>
         <div class="card-body">
           <span class="card-category-index">12</span>
@@ -204,10 +173,9 @@
         </div>
       </article>
 
-      <!-- 13.  -->
       <article class="category-card card-candies">
         <div class="card-img-wrapper">
-          <img src="img/candies_and_sweets/wonka_nerds_rainbow_candy.jpg" alt="wonka_nerds_rainbow_candy">
+          <img src="../img/candies_and_sweets/wonka_nerds_rainbow_candy.jpg" alt="wonka_nerds_rainbow_candy">
         </div>
         <div class="card-body">
           <span class="card-category-index">13</span>
@@ -215,15 +183,6 @@
           <p>-</p>
         </div>
       </article>
-      
-    </div>
-
-    <!-- Pure CSS Collapsible Toggle Button -->
-    <div class="collections-toggle-wrapper">
-      <label for="collectionsToggle" class="btn-toggle-collections" role="button" tabindex="0">
-        <span class="label-collapsed">View All Collections <span class="toggle-btn-icon" aria-hidden="true">↓</span></span>
-        <span class="label-expanded">Show Less Collections <span class="toggle-btn-icon" aria-hidden="true">↑</span></span>
-      </label>
     </div>
   </section>
 </body>
