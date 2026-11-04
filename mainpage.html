@@ -106,8 +106,8 @@
       <p class="section-subtitle">Stocked with authentic imported and local sweets, ramen bowls, crunchy treats, and pantry direct from our store.</p>
     </div>
 
-    <!-- Pure CSS Toggle Checkbox -->
-    <input type="checkbox" id="collectionsToggle" class="collections-toggle-checkbox" hidden>
+    <!-- Pure CSS Target Trigger for Expanding / Collapsing + Navigating -->
+    <div id="collections-expanded" class="collections-target-anchor"></div>
 
     <div class="category-grid" id="categoryGrid">
       
@@ -252,12 +252,14 @@
       </article>
     </div>
 
-    <!-- Pure CSS Collapsible Toggle Button -->
+    <!-- Pure CSS Collapsible Toggle Buttons -->
     <div class="collections-toggle-wrapper">
-      <label for="collectionsToggle" class="btn-toggle-collections" role="button" tabindex="0">
-          <span class="label-collapsed">View All Collections <span class="toggle-btn-icon" aria-hidden="true">↓</span></span>
-          <span class="label-expanded">Show Less Collections<span class="toggle-btn-icon" aria-hidden="true">↑</span></span>
-      </label>
+      <a href="#collections-expanded" class="btn-toggle-collections label-collapsed">
+        <span>View All Collections <span class="toggle-btn-icon" aria-hidden="true">↓</span></span>
+      </a>
+      <a href="#collections" class="btn-toggle-collections label-expanded">
+        <span>Show Less Collections <span class="toggle-btn-icon" aria-hidden="true">↑</span></span>
+      </a>
     </div>
   </section>
 

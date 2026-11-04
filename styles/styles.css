@@ -500,6 +500,11 @@ input:focus-visible {
   padding: 100px 5%;
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-line);
+  overflow-anchor: none;
+}
+
+.reels-section {
+  overflow-anchor: none;
 }
 
 .category-grid {
@@ -510,22 +515,30 @@ input:focus-visible {
   gap: 28px;
 }
 
-/* Pure CSS Collapsible Grid Logic (Shows 1st row of 4 cards when collapsed) */
-.collections-toggle-checkbox:not(:checked) ~ .category-grid .category-card:nth-child(n+5) {
+/* Pure CSS Collapsible Grid Logic using :target (Collapses AND navigates to #collections without JS) */
+.collections-section {
+  scroll-margin-top: 80px;
+}
+
+.collections-target-anchor {
+  scroll-margin-top: 120px;
+}
+
+#collections-expanded:not(:target) ~ .category-grid .category-card:nth-child(n+5) {
   display: none;
 }
 
-.collections-toggle-checkbox:checked ~ .category-grid .category-card:nth-child(n+5) {
+#collections-expanded:target ~ .category-grid .category-card:nth-child(n+5) {
   display: flex;
   animation: cardFadeIn 0.4s ease forwards;
 }
 
 /* Toggle label text switching */
-.collections-toggle-checkbox:not(:checked) ~ .collections-toggle-wrapper .label-expanded {
+#collections-expanded:not(:target) ~ .collections-toggle-wrapper .label-expanded {
   display: none;
 }
 
-.collections-toggle-checkbox:checked ~ .collections-toggle-wrapper .label-collapsed {
+#collections-expanded:target ~ .collections-toggle-wrapper .label-collapsed {
   display: none;
 }
 
@@ -763,13 +776,13 @@ input:focus-visible {
   margin: 0 auto 36px;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
 }
 
 .reels-header-wrapper .section-header {
-  text-align: left;
+  text-align: center;
   margin: 0;
   max-width: 620px;
 }
