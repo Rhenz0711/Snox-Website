@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquiry Cart & Checkout | Snox+ Taytay Rizal Branch</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/subpage.css">
+  <link rel="stylesheet" href="../styles/checkout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Import the header boilerplate -->
+  <iframe src="header-boilerplate.html" class="header-iframe" scrolling="no" title="Site Header"></iframe>
+
+  <!-- Modern Breadcrumb Bar -->
+  <nav class="subpage-breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="subpage-breadcrumb-inner">
+      <ol class="breadcrumbs">
+        <li>
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li>
+          <a href="../index.html#collections">Collections</a>
+          <span class="breadcrumb-separator" aria-hidden="true">&rsaquo;</span>
+        </li>
+        <li class="breadcrumb-current" aria-current="page">Cart &amp; Inquiry</li>
+      </ol>
+      <a href="../index.html#collections" class="breadcrumb-back-btn">
+        <span aria-hidden="true">&larr;</span> Continue Browsing
+      </a>
+    </div>
+  </nav>
+
+  <!-- Checkout / Inquiry Cart Section -->
+  <section class="checkout-section">
+    <div class="section-header">
+      <h1 class="section-title">Your Selected Items</h1>
+    </div>
+
+    <div class="checkout-container">
+      <!-- Left Column: 3 Prefilled Products in the HTML Container -->
+      <div class="cart-items-panel">
+        <div class="panel-header">
+          <h2>Selected Products</h2>
+          <span class="cart-count-pill">3 Products in Cart</span>
+        </div>
+
+        <div class="cart-product-list">
+          <!-- Product 1 -->
+          <article class="cart-product-card card-noodles">
+            <div class="cart-product-img" tabindex="0">
+              <img src="../img/noodles_and_instant_meals/samyang_buldak_carbonara_noodles.jpg"
+                alt="Samyang Buldak Carbonara Noodles">
+            </div>
+            <div class="cart-product-info">
+              <div class="cart-product-meta">
+                <span class="cart-product-index">Item 01</span>
+                <span class="cart-product-category">Noodles &amp; Instant Meals</span>
+              </div>
+              <h3>Samyang Buldak Carbonara Noodles</h3>
+              <p>Creamy carbonara meets fiery Korean Buldak stir-fried ramen noodles.</p>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="cart-product-card card-chocolates">
+            <div class="cart-product-img" tabindex="0">
+              <img src="../img/chocolates/bourbon_alfort_mini_chocolate_biscuits.jpg"
+                alt="Bourbon Alfort Mini Chocolate Biscuits">
+            </div>
+            <div class="cart-product-info">
+              <div class="cart-product-meta">
+                <span class="cart-product-index">Item 02</span>
+                <span class="cart-product-category">Chocolates</span>
+              </div>
+              <h3>Bourbon Alfort Mini Chocolate Biscuits</h3>
+              <p>Rich Japanese milk chocolate topped on a crispy wholegrain digestive biscuit.</p>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="cart-product-card card-dried-fruits">
+            <div class="cart-product-img" tabindex="0">
+              <img src="../img/dried_fruits_and_nuts/adora_colorful_plum_dried_fruit.jpg"
+                alt="Adora Colorful Plum Dried Fruit">
+            </div>
+            <div class="cart-product-info">
+              <div class="cart-product-meta">
+                <span class="cart-product-index">Item 03</span>
+                <span class="cart-product-category">Dried Fruits &amp; Nuts</span>
+              </div>
+              <h3>Adora Colorful Plum Dried Fruit</h3>
+              <p>Sweet and tangy preserved dried plums bursting with vibrant flavor.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Right Column: Prefilled Messenger Inquiry Container -->
+      <aside class="inquiry-summary-panel">
+        <div class="inquiry-card">
+          <span class="inquiry-eyebrow">Inquire us</span>
+          <p class="inquiry-desc">
+            We have pre-filled your selected products below so you can quickly message our Taytay branch team for
+            availability, bulk discounts, or pickup/delivery.
+          </p>
+
+          <!-- Prefill Message Box with the text and items listed -->
+          <div class="prefill-message-wrapper">
+            <label for="messengerPrefillText" class="prefill-label">Pre-filled Messenger Inquiry Message</label>
+            <textarea id="messengerPrefillText" class="prefill-textarea" rows="7" readonly>Inquire us about these product on messenger:
+                1. Samyang Buldak Carbonara Noodles
+                2. Bourbon Alfort Mini Chocolate Biscuits
+                3. Adora Colorful Plum Dried Fruit 
+
+                Hi Snox+ Taytay Branch! Are these items currently in stock?</textarea>
+          </div>
+
+          <ul class="inquiry-items-summary" aria-label="Items listed for inquiry">
+            <li>
+              <span class="summary-dot"></span>
+              <span>Samyang Buldak Carbonara Noodles</span>
+              <span class="summary-tag">Included</span>
+            </li>
+            <li>
+              <span class="summary-dot"></span>
+              <span>Bourbon Alfort Mini Chocolate Biscuits</span>
+              <span class="summary-tag">Included</span>
+            </li>
+            <li>
+              <span class="summary-dot"></span>
+              <span>Adora Colorful Plum Dried Fruit</span>
+              <span class="summary-tag">Included</span>
+            </li>
+          </ul>
+
+          <a href="https://m.me/Snoxtaytayrizalbranch?text=Inquire%20us%20about%20these%20product%20on%20messenger%3A%0A1.%20Samyang%20Buldak%20Carbonara%20Noodles%20(1x)%0A2.%20Bourbon%20Alfort%20Mini%20Chocolate%20Biscuits%20(1x)%0A3.%20Adora%20Colorful%20Plum%20Dried%20Fruit%20(1x)"
+            target="_blank" rel="noopener noreferrer" class="btn-checkout-messenger">
+            <svg class="messenger-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.145 2 11.258c0 2.909 1.455 5.513 3.734 7.185V22l3.414-1.874c.905.251 1.864.387 2.852.387 5.523 0 10-4.145 10-9.255C22 6.145 17.523 2 12 2zm1.037 12.443l-2.586-2.758-5.048 2.758 5.553-5.895 2.656 2.758 4.978-2.758-5.553 5.895z" />
+            </svg>
+            <span>Inquire us about these product on messenger</span>
+          </a>
+
+          <div class="inquiry-perks">
+            <span>✓ Wholesale &amp; Retail Pricing</span>
+            <span>✓ GCash, Maya, Bank &amp; COD</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Import the footer boilerplate -->
+  <iframe src="footer-boilerplate.html" class="footer-iframe" scrolling="no" title="Site Footer"></iframe>
+</body>
+
+</html>
