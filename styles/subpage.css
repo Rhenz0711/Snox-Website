@@ -1,11 +1,33 @@
 iframe.header-iframe {
     width: 100%; 
-    height: 100px; 
+    height: 115px; 
     border: none; 
     display: block; 
     position: sticky; 
     top: 0; 
-    z-index: 100;
+    z-index: 50;
+}
+
+iframe.footer-iframe {
+    width: 100%; 
+    height: 350px; 
+    border: none; 
+    display: block; 
+    background-color: var(--color-forest);
+    position: relative; 
+    bottom: 0; 
+}
+
+@media (max-width: 1024px) {
+    iframe.footer-iframe {
+        height: 590px;
+    }
+}
+
+@media (max-width: 768px) {
+    iframe.footer-iframe {
+        height: 750px;
+    }
 }
 
 
@@ -16,7 +38,7 @@ iframe.header-iframe {
   border-bottom: 1px solid var(--color-line);
   padding: 14px 5%;
   position: sticky;
-  top: 100px; /* Sticks directly below the 100px iframe */
+  top: 110px; /* Sticks directly below the 120px iframe */
   z-index: 99;
 }
 

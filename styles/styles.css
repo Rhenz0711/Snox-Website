@@ -1,23 +1,15 @@
-/* ==========================================================================
-   Snox+ Taytay Branch — Distinctive Frontend Design Stylesheet
-   Designed with intentional typography, bespoke warehouse palette,
-   elevated tactile cards, responsive layout, and refined micro-interactions.
-   ========================================================================== */
-
-/* 1. Design Tokens */
 :root {
-  /* Core Brand Palette: Warm Warehouse & Philippine Convenience Vernacular */
-  --color-forest: #143526;        /* Deep pine/forest shelf dark */
-  --color-forest-rich: #1d4a36;   /* Mid forest tone */
-  --color-mint: #e2f2e9;          /* Fresh mint background tint */
-  --color-mint-subtle: #f0f7f3;   /* Softest sage-mint wash */
-  --color-amber: #d97706;         /* Energetic snack warm amber */
-  --color-amber-soft: #fef3c7;    /* Soft amber pill background */
-  --color-cream: #faf8f5;         /* Warm warehouse paper tone */
-  --color-surface: #ffffff;       /* Pure card surface */
-  --color-ink: #111827;           /* High contrast primary text */
-  --color-ink-muted: #525f70;     /* Balanced editorial secondary text */
-  --color-line: rgba(20, 53, 38, 0.08); /* Structural divider */
+  --color-forest: #143526;       
+  --color-forest-rich: #1d4a36;   
+  --color-mint: #e2f2e9;         
+  --color-mint-subtle: #f0f7f3;  
+  --color-amber: #d97706;         
+  --color-amber-soft: #fef3c7;    
+  --color-cream: #faf8f5;         
+  --color-surface: #ffffff;       
+  --color-ink: #111827;          
+  --color-ink-muted: #525f70;    
+  --color-line: rgba(20, 53, 38, 0.08); 
   --color-line-strong: rgba(20, 53, 38, 0.16);
 
   /* Social & Navigation Accents */
@@ -292,7 +284,7 @@ input:focus-visible {
 /* 5. Hero Section */
 .hero-section {
   background: radial-gradient(circle at 80% 20%, #fef3c7 0%, #edf7f1 45%, #faf8f5 90%);
-  padding: 72px 5% 96px;
+  padding: 72px 5% 70px;
   border-bottom: 1px solid var(--color-line);
   position: relative;
 }
